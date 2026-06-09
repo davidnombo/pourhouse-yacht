@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bluewater Yacht Comparables — PourHouse</title>
+  <meta name="description" content="Comparable Bluewater yacht listings sorted shortest to longest for PourHouse, a 1986 42-foot Bluewater Coastal Cruiser for sale in Warsaw, Kentucky." />
+  <style>
+    :root { --navy:#071d35; --navy-2:#0b2a4a; --river:#6f97b7; --cream:#fbf8f1; --white:#fff; --mist:#edf4f8; --line:rgba(7,29,53,.16); --gold:#c49a4b; --ink:#0a1624; --muted:#5b6b78; --shadow:0 24px 80px rgba(7,29,53,.16); --radius:24px; }
+    *{box-sizing:border-box} body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--cream);line-height:1.5} a{color:inherit} .wrap{width:min(1160px,calc(100% - 40px));margin:0 auto}
+    .topbar{position:sticky;top:0;z-index:50;backdrop-filter:blur(18px);background:rgba(251,248,241,.9);border-bottom:1px solid var(--line)} .nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px} .brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.02em;color:var(--navy);text-decoration:none} .burgee{width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:var(--navy);color:var(--white);box-shadow:0 10px 24px rgba(7,29,53,.2);font-size:22px} .navlinks{display:flex;gap:20px;align-items:center;color:#274157;font-size:14px} .navlinks a{text-decoration:none} .pill{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:999px;font-weight:850;text-decoration:none;background:var(--navy);color:var(--white);border:1px solid transparent} .pill.gold{background:var(--gold);color:#1d1609}
+    .hero{background:radial-gradient(circle at 85% 15%,rgba(196,154,75,.22),transparent 28%),linear-gradient(135deg,var(--navy),var(--navy-2) 55%,#0e3a63);color:white;padding:82px 0 76px;position:relative;overflow:hidden} .hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(to bottom,rgba(0,0,0,.9),transparent 85%)} .hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:42px;align-items:end} .eyebrow{display:inline-flex;align-items:center;gap:10px;color:#dbeaf4;font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:850;margin-bottom:18px} .eyebrow:before{content:"";width:46px;height:1px;background:var(--gold)} h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(44px,6vw,76px);line-height:.95;letter-spacing:-.045em;margin:0;text-wrap:balance} .subtitle{font-size:clamp(18px,2vw,22px);color:#d7e7f2;max-width:760px;margin:24px 0 0} .hero-stat{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:26px;padding:24px;box-shadow:var(--shadow)} .hero-stat strong{font-size:46px;display:block;letter-spacing:-.05em} .hero-stat span{color:#d7e7f2}
+    section{padding:70px 0} .summary-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-34px;position:relative;z-index:2} .summary-card{background:white;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 12px 40px rgba(7,29,53,.08)} .summary-card small{display:block;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.13em;font-weight:900;margin-bottom:7px} .summary-card strong{display:block;color:var(--navy);font-size:26px}
+    .lead{display:grid;grid-template-columns:minmax(0,.9fr) minmax(300px,.5fr);gap:24px;align-items:start} h2{font-family:Georgia,"Times New Roman",serif;color:var(--navy);font-size:clamp(34px,4vw,56px);line-height:.98;letter-spacing:-.035em;margin:0 0 18px} .panel{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:0 12px 40px rgba(7,29,53,.07)} .panel.dark{background:var(--navy);color:white;border:none} .panel.dark h2,.panel.dark h3{color:white} .panel.dark p,.panel.dark li{color:#d7e7f2} .panel p{color:#40576a;margin:0 0 14px} .list{margin:0;padding:0;list-style:none;display:grid;gap:10px} .list li{display:grid;grid-template-columns:22px 1fr;gap:8px;color:#40576a} .check{color:var(--gold);font-weight:900}
+    .toolbar{display:flex;justify-content:space-between;gap:16px;align-items:center;margin:34px 0 16px;flex-wrap:wrap} .toolbar p{margin:0;color:var(--muted)} .legend{display:flex;gap:8px;flex-wrap:wrap} .legend span{font-size:12px;font-weight:850;border-radius:999px;padding:7px 10px;background:white;border:1px solid var(--line)}
+    .comp-list{display:grid;gap:12px} .comp-card{display:grid;grid-template-columns:104px minmax(0,1fr) 180px;gap:18px;align-items:center;background:white;border:1px solid var(--line);border-radius:22px;padding:16px;box-shadow:0 8px 28px rgba(7,29,53,.055)} .comp-card.direct-42{border-color:rgba(196,154,75,.75);box-shadow:0 12px 42px rgba(196,154,75,.16)} .comp-length{border-radius:18px;background:var(--mist);height:86px;display:grid;place-items:center;text-align:center;color:var(--navy)} .comp-length strong{display:block;font-size:34px;line-height:1;letter-spacing:-.06em} .comp-length span{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:900;color:#567} .comp-topline{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:5px} .comp-topline span{font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:900;color:#5f7384;background:#f0f6f9;border-radius:999px;padding:5px 8px} .comp-main h3{margin:0;color:var(--navy);font-size:21px;letter-spacing:-.02em} .meta{margin:5px 0 0;color:#53697a} .note{margin:8px 0 0;color:#6a5a33;font-size:13px;background:#fff6df;border:1px solid rgba(196,154,75,.32);padding:8px 10px;border-radius:12px} .comp-price{display:grid;justify-items:end;gap:10px} .comp-price strong{font-size:22px;color:var(--navy)} .comp-price a{text-decoration:none;background:var(--navy);color:white;border-radius:999px;padding:11px 14px;font-weight:850;font-size:14px}
+    .cta{background:linear-gradient(135deg,var(--navy),#0e385f);color:white} .cta h2{color:white} .cta p{color:#d7e7f2;max-width:760px} .cta-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+    .footer{padding:28px 0;background:#061426;color:#b9c8d4;font-size:13px} .footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:900px){.navlinks{display:none}.hero .wrap,.lead{grid-template-columns:1fr}.summary-grid{grid-template-columns:repeat(2,1fr)}.comp-card{grid-template-columns:1fr}.comp-price{justify-items:start}}
+    @media(max-width:560px){.wrap{width:min(100% - 28px,1160px)}.summary-grid{grid-template-columns:1fr}.comp-length{height:auto;padding:16px}}
+  </style>
+</head>
+<body>
+  <header class="topbar"><nav class="nav wrap" aria-label="Main navigation"><a class="brand" href="index.html"><span class="burgee">⚓</span><span>PourHouse</span></a><div class="navlinks"><a href="index.html">Boat</a><a href="comparables.html">Comparables</a><a href="index.html#video">Video</a><a class="pill" href="tel:+151****7318">Call / Text David</a></div></nav></header>
+  <main>
+    <section class="hero"><div class="wrap"><div><div class="eyebrow">National Bluewater listing scan</div><h1>Bluewater comparables, sorted shortest to longest.</h1><p class="subtitle">Public listing links gathered from YachtWorld/boats.com/Boat Trader-style feeds, plus public search hits for Facebook Marketplace, Craigslist, and forums. The purpose is simple: show where a 42-foot Bluewater sits against larger Bluewater yachts nationally.</p></div><aside class="hero-stat"><strong>22</strong><span>active candidate Bluewater listings found on this first pass, capped below 50 and sorted by length.</span></aside></div></section>
+    <div class="summary-grid wrap"><div class="summary-card"><small>PourHouse</small><strong>42'</strong><span>1986 Bluewater Coastal Cruiser</span></div><div class="summary-card"><small>Asking</small><strong>$35k</strong><span>Warsaw, Kentucky</span></div><div class="summary-card"><small>Closest live comps</small><strong>42'</strong><span>Stillwater MN and Dubuque IA examples surfaced</span></div><div class="summary-card"><small>Largest found</small><strong>68'</strong><span>larger Bluewater custom/motor-yacht listings</span></div></div>
+    <section><div class="wrap lead"><div class="panel"><h2>What this comparison shows</h2><p>PourHouse appears to sit at the smallest practical end of the Bluewater houseboat/coastal-cruiser market. The closest direct comparisons found in public search are other 42-foot Bluewater Coastal Cruiser listings, then the market quickly steps into 47, 51, 52, 55, 58, 59, 65, and 68-foot boats.</p><p>This page is buyer-facing but transparent: listing prices and availability can change without notice, and some public/social sources only expose snippets without full detail.</p></div><div class="panel dark"><h3>Research notes</h3><ul class="list"><li><span class="check">✓</span><span>Sorted by extracted/estimated length, shortest to longest.</span></li><li><span class="check">✓</span><span>42-foot listings are intentionally emphasized as direct comparisons.</span></li><li><span class="check">✓</span><span>Facebook and Craigslist surfaced leads, but public access was limited or duplicative.</span></li><li><span class="check">✓</span><span>Excluded one 41-foot non-Coastal-Cruiser outlier and one unavailable 42-foot broker reference from the main active list.</span></li><li><span class="check">✓</span><span>As-of scan date: 2026-06-09.</span></li></ul></div></div></section>
+    <section style="background:#edf4f8"><div class="wrap"><h2>Comparable Bluewater listings</h2><div class="toolbar"><p>Direct listing links open in a new tab. Verify availability, price, equipment, and condition with the seller/broker.</p><div class="legend"><span>Gold border = 42' direct comp</span><span>Sorted shortest → longest</span></div></div><div class="comp-list">
+      <article class="comp-card direct-42">
+        <div class="comp-length"><strong>42'</strong><span>length</span></div>
+        <div class="comp-main">
+          <div class="comp-topline"><span>1985</span><span>boats.com</span></div>
+          <h3>1985 Bluewater 42 Coastal Cruiser</h3>
+          <p class="meta">Stillwater, Minnesota</p>
+          
+        </div>
+        <div class="comp-price">
+          <strong>$29,990</strong>
+          <a href="https://www.boats.com/power-boats/1985-bluewater-42-coastal-cruiser-9454486/" target="_blank" rel="noopener">Open listing</a>
+        </div>
+      </article>
+      <article class="comp-card direct-42">
+        <div class="comp-length"><strong>42'</strong><span>length</span></div>
+        <div class="comp-main">
+          <div class="comp-topline"><span>1988</span><span>Boat Trader</span></div>
+          <h3>1988 Bluewater Yachts Coastal Cruiser</h3>
+          <p class="meta">Dubuque, IA 52001</p>
+          <p class="note">Boat Trader detail page places it in the 38–44 ft length band; likely a 42 Coastal Cruiser, verify on inquiry.</p>
+        </div>
+        <div class="comp-price">
+          <strong>$44,000</strong>
+          <a href="https://www.boattrader.com/boat/1988-bluewater-yachts-coastal-cruiser-10190763/" target="_blank" rel="noopener">Open listing</a>
+        </div>
+      </article>
+      <article class="comp-card nearby">
+        <div class="comp-length"><strong>47'</strong><span>length</span></div>
+        <div class="comp-main">
+          <div class="comp-topline"><span>1983</span><span>Boat Trader</span></div>
+          <h3>1983 Bluewater Yachts MY47</h3>
+          <p class="meta">Afton, OK 74331</p>
+          
+        </div>
+        <div class="comp-price">
+          <strong>$45,000</strong>
+          <a href="https://www.boattrader.com/boat/1983-bluewater-yachts-my47-10164404/" target="_blank" rel="noopener">Open listing</a>
+        </div>
+      </article>
+      <article class="comp-card nearby">
+        <div class="comp-length"><strong>47'</strong><span>length</span></div>
+        <div class="comp-main">
+          <div class="comp-topline"><span>1984</span><span>Boat Trader</span></div>
+          <h3>1984 Bluewater Yachts Vagabond 47</h3>
+          <p class="meta">San Pedro, CA 90731</p>
+          
+        </div>
+        <div class="comp-price">
+          <strong>$82,250</strong>
+          <a href="https://www.boattrader.com/boat/1984-bluewater-yachts-vagabond-47-10148921/" target="_blank" rel="noopener">Open listing</a>
+        </div>
+      </article>
+      <article class="comp-card nearby">
+        <div class="comp-length"><strong>51'</strong><span>length</span></div>
+        <div class="comp-main">
+          <div class="comp-topline"><span>1985</span><span>Boat Trader</span></div>
+          <h3>1985 Bluewater Yachts 51 Ft Coastal Cruiser</h3>
+          <p class="meta">Perry, KS 66073</p>
+          
+        </div>
+        <div class="comp-price">
+          <strong>$69,900</strong>
+          <a href="https://www.boattrader.com/boat/1985-bluewater-yachts-51-ft-coastal-cruiser-9857081/" target="_blank" rel="noopener">Open listing</a>
+        </div>
+      </article>
+      <article class="comp-card nearby">
+        <div class="comp-length"><strong>51'</strong><span>length</span></div>
+        <div class="comp-main">
+          <div class="comp-topline"><span>1997</span><span>Boat Trader</span></div>
+          <h3>1997 Bluewater Yachts 510</h3>
+          <p class="meta">Galveston, TX</p>
+          
+        </div>
+        <div class="comp-price">
+          <strong>$140,000</strong>
+          <a href="https://www.boattrader.com/boat/1997-bluewater-yachts-510-10191410/" target="_blank" rel="noopener">Open listing</a>
+        </div>
+      </article>
+      <article class="comp-card nearby">
+        <div class="comp-length"><strong>51'</strong><span>length</span></div>
+        <div class="comp-main">
+          <div class="comp-topline"><span>1987</span><span>Boat Trader</span></div>
+          <h3>1987 Bluewater Yachts 51 Coastal Cruiser Cockpit</h3>
+          <p class="meta">Ruskin, FL 33570</p>
+          
+        </div>
+        <div class="comp-price">
+          <strong>$149,000</strong>
+          <a href="https://www.boattrader.com/boat/1987-bluewater-yachts-51-coastal-cruiser-cockpit-10182784/" target="_blank" rel="noopener">Open listing</a>
+        </div>
+      </article>
+      <article class="comp-card nearby">
+        <div class="comp-length"><strong>52'</strong><span>length</span></div>
+        <div class="comp-main">
+          <div class="comp-topline"><span>2003</span><span>Boat Trader</span></div>
+          <h3>2003 Bluewater Yachts Custom Cruiser 52</h3>
+          <p class="meta">Madison, WI 53704</p>
+          
+        </div>
+        <div class="comp-price">
+          <strong>$74,900</strong>
+          <a href="https://www.boattrader.com/boat/2003-bluewater-yachts-custom-cruiser-52-9863699/" target="_blank" rel="noopener">Open listing</a>
+        </div>
+      </article>
+      <article class="comp-card nearby">
+        <div class="comp-length"><strong>52'</strong><span>length</span></div>
+        <div class="comp-main">
+          <div class="comp-topline"><span>2000</span><span>Boat Trader</span></div>
+          <h3>2000 Bluewater Yachts 5200 Millenium</h3>
+          <p class="meta">Okoboji, IA 51351</p>
+          
+        </div>
+        <div class="comp-price">
+          <strong>$149,900</strong>
+          <a href="https://www.boattrader.com/boat/2000-bluewater-yachts-5200-millenium-9630887/" target="_blank" rel="noopener">Open listing</a>
+        </div>
+      </article>
+      <article class="comp-card nearby">
+        <div class="comp-length"><strong>52'</strong><span>length</span></div>
+        <div class="comp-main">
+          <div class="comp-topline"><span>2006</span><span>Boat Trader</span></div>
+          <h3>2006 Bluewater Yachts 5200</h3>
+          <p class="meta">Myrtle Beach, SC 29579</p>
+          
+        </div>
+        <div class="comp-price">
+          <strong>$199,000</strong>
+          <a href="https://www.boattrader.com/boat/2006-bluewater-yachts-5200-9660514/" target="_blank" rel="noopener">Open listing</a>
+        </div>
+      </article>
+      <article class="comp-card larger">
+        <div class="comp-length"><strong>55'</strong><span>length</span></div>
+        <div class="comp-main">
+          <div class="comp-topline"><span>1989</span><span>Boat Trader</span></div>
+          <h3>1989 Bluewater Yachts Custom Cruiser 55</h3>
+          <p class="meta">Madison, WI 53704</p>
+          
+        </div>
+        <div class="comp-price">
+          <strong>$44,900</strong>
+          <a href="https://www.boattrader.com/boat/1989-bluewater-yachts-custom-cruiser-55-9863767/" target="_blank" rel="noopener">Open listing</a>
+        </div>
+      </article>
+      <article class="comp-card larger">
+        <div class="comp-length"><strong>55'</strong><span>length</span></div>
+        <div class="comp-main">
+          <div class="comp-topline"><span>1989</span><span>Boat Trader</span></div>
+          <h3>1989 Bluewater Yachts Coastal Cruiser 55</h3>
+          <p class="meta">Red Wing, MN 55066</p>
+          
+        </div>
+        <div class="comp-price">
+          <strong>$69,000</strong>
+          <a href="https://www.boattrader.com/boat/1989-bluewater-yachts-coastal-cruiser-55-10203013/" target="_blank" rel="noopener">Open listing</a>
+        </div>
+      </article>
+      <article class="comp-card larger">
+        <div class="comp-length"><strong>55'</strong><span>length</span></div>
+        <div class="comp-main">
+          <div class="comp-topline"><span>1989</span><span>Boat Trader</span></div>
+          <h3>1989 Bluewater Yachts 55&#x27; Coastal Cruiser</h3>
+          <p class="meta">New Site, MS 38859</p>
+          
+        </div>
+        <div class="comp-price">
+          <strong>$85,000</strong>
+          <a href="https://www.boattrader.com/boat/1989-bluewater-yachts-55-coastal-cruiser-10112610/" target="_blank" rel="noopener">Open listing</a>
+        </div>
+      </article>
+      <article class="comp-card larger">
+        <div class="comp-length"><strong>55'</strong><span>length</span></div>
+        <div class="comp-main">
+          <div class="comp-topline"><span>1988</span><span>Boat Trader</span></div>
+          <h3>1988 Bluewater Yachts 55 Coastal Cruiser</h3>
+          <p class="meta">Red Wing, MN 55066</p>
+          
+        </div>
+        <div class="comp-price">
+          <strong>$99,900</strong>
+          <a href="https://www.boattrader.com/boat/1988-bluewater-yachts-55-coastal-cruiser-9842127/" target="_blank" rel="noopener">Open listing</a>
+        </div>
+      </article>
+      <article class="comp-card larger">
+        <div class="comp-length"><strong>57'</strong><span>length</span></div>
+        <div class="comp-main">
+          <div class="comp-topline"><span>1986</span><span>Boat Trader</span></div>
+          <h3>1986 Bluewater Yachts Custom Fexas 57</h3>
+          <p class="meta">Santa Cruz, CA 95060</p>
+          
+        </div>
+        <div class="comp-price">
+          <strong>$199,000</strong>
+          <a href="https://www.boattrader.com/boat/1986-bluewater-yachts-custom-fexas-57-10156277/" target="_blank" rel="noopener">Open listing</a>
+        </div>
+      </article>
+      <article class="comp-card larger">
+        <div class="comp-length"><strong>58'</strong><span>length</span></div>
+        <div class="comp-main">
+          <div class="comp-topline"><span>1999</span><span>Boat Trader</span></div>
+          <h3>1999 Bluewater Yachts 5800 Millenium</h3>
+          <p class="meta">Emeryville, CA 94608</p>
+          
+        </div>
+        <div class="comp-price">
+          <strong>$149,000</strong>
+          <a href="https://www.boattrader.com/boat/1999-bluewater-yachts-5800-millenium-10076310/" target="_blank" rel="noopener">Open listing</a>
+        </div>
+      </article>
+      <article class="comp-card larger">
+        <div class="comp-length"><strong>58'</strong><span>length</span></div>
+        <div class="comp-main">
+          <div class="comp-topline"><span>2000</span><span>Boat Trader</span></div>
+          <h3>2000 Bluewater Yachts 5800 Motor Yacht</h3>
+          <p class="meta">Sarasota, FL 34239</p>
+          
+        </div>
+        <div class="comp-price">
+          <strong>$329,900</strong>
+          <a href="https://www.boattrader.com/boat/2000-bluewater-yachts-5800-motor-yacht-9105604/" target="_blank" rel="noopener">Open listing</a>
+        </div>
+      </article>
+      <article class="comp-card larger">
+        <div class="comp-length"><strong>59'</strong><span>length</span></div>
+        <div class="comp-main">
+          <div class="comp-topline"><span>1990</span><span>Boat Trader</span></div>
+          <h3>1990 Bluewater Yachts Passenger Vessel</h3>
+          <p class="meta">Edgewater, MD 21037</p>
+          
+        </div>
+        <div class="comp-price">
+          <strong>$199,000</strong>
+          <a href="https://www.boattrader.com/boat/1990-bluewater-yachts-passenger-vessel-9870151/" target="_blank" rel="noopener">Open listing</a>
+        </div>
+      </article>
+      <article class="comp-card larger">
+        <div class="comp-length"><strong>59'</strong><span>length</span></div>
+        <div class="comp-main">
+          <div class="comp-topline"><span>1991</span><span>Boat Trader</span></div>
+          <h3>1991 Bluewater Yachts 5900 Coastal Cruiser</h3>
+          <p class="meta">San Diego, CA 92101</p>
+          
+        </div>
+        <div class="comp-price">
+          <strong>$199,000</strong>
+          <a href="https://www.boattrader.com/boat/1991-bluewater-yachts-5900-coastal-cruiser-10170470/" target="_blank" rel="noopener">Open listing</a>
+        </div>
+      </article>
+      <article class="comp-card larger">
+        <div class="comp-length"><strong>60'</strong><span>length</span></div>
+        <div class="comp-main">
+          <div class="comp-topline"><span>2003</span><span>Boat Trader</span></div>
+          <h3>2003 Bluewater Yachts Custom 6000</h3>
+          <p class="meta">San Pedro, Ca, CA 90731</p>
+          
+        </div>
+        <div class="comp-price">
+          <strong>$205,000</strong>
+          <a href="https://www.boattrader.com/boat/2003-bluewater-yachts-custom-6000-10180372/" target="_blank" rel="noopener">Open listing</a>
+        </div>
+      </article>
+      <article class="comp-card larger">
+        <div class="comp-length"><strong>65'</strong><span>length</span></div>
+        <div class="comp-main">
+          <div class="comp-topline"><span>2009</span><span>Boat Trader</span></div>
+          <h3>2009 Bluewater Yachts 65 Legacy</h3>
+          <p class="meta">Gwynn, VA 23066</p>
+          
+        </div>
+        <div class="comp-price">
+          <strong>$674,985</strong>
+          <a href="https://www.boattrader.com/boat/2009-bluewater-yachts-65-legacy-8979182/" target="_blank" rel="noopener">Open listing</a>
+        </div>
+      </article>
+      <article class="comp-card larger">
+        <div class="comp-length"><strong>68'</strong><span>length</span></div>
+        <div class="comp-main">
+          <div class="comp-topline"><span>1997</span><span>Boat Trader</span></div>
+          <h3>1997 Bluewater Yachts 680 Custom Series</h3>
+          <p class="meta">Coltons Point, MD 20626</p>
+          
+        </div>
+        <div class="comp-price">
+          <strong>$125,000</strong>
+          <a href="https://www.boattrader.com/boat/1997-bluewater-yachts-680-custom-series-8280942/" target="_blank" rel="noopener">Open listing</a>
+        </div>
+      </article></div></div></section>
+    <section><div class="wrap lead"><div class="panel"><h2>Other public leads checked</h2><p>These sources surfaced additional Bluewater mentions or duplicate listings. They are not mixed into the main sorted list when they duplicate the same boat or are outside the core U.S. buyer set, but the links are kept here for transparency.</p><ul class="list"><li><span class="check">•</span><span><a href="https://www.facebook.com/marketplace/item/1409244877909694/" target="_blank" rel="noopener">Facebook Marketplace: 1991 Bluewater 5900 Coastal Cruiser, San Diego</a> — appears duplicative of the San Diego listing above.</span></li><li><span class="check">•</span><span><a href="https://www.facebook.com/marketplace/item/945282908554105/" target="_blank" rel="noopener">Facebook Marketplace: 1988 Bluewater coastal cruiser, Midland, Ontario</a> — Canadian lead, useful market signal but outside the core U.S. comp set.</span></li><li><span class="check">•</span><span><a href="https://madison.craigslist.org/boa/d/madison-ft-bluewater-yachts-custom/7936979745.html" target="_blank" rel="noopener">Craigslist: 1989 55 ft Bluewater Yachts Custom Cruiser, Madison</a> — appears duplicative of the Madison 55-foot private-seller listing above.</span></li></ul></div><div class="panel"><h2>Why the 42-foot comps matter</h2><p>The closest buyer comparison is not a 55- or 68-foot yacht; it is another 42-foot Bluewater Coastal Cruiser. That is why the 42-foot listings are highlighted and kept at the top.</p></div></div></section>
+    <section class="cta"><div class="wrap"><h2>Why PourHouse belongs near the top of this list</h2><p>At 42 feet and $35,000, PourHouse is positioned as one of the shortest, most approachable Bluewater Coastal Cruiser options: wide walkaround decks, high railings, working air, two working heads/showers, full galley, twin Crusader closed-cooled gas engines, Kohler generator, and regular current use on the Ohio River.</p><div class="cta-actions"><a class="pill gold" href="index.html">Back to PourHouse</a><a class="pill" style="border-color:rgba(255,255,255,.38);background:transparent" href="tel:+151****7318">Call David: 513-767-7318</a></div></div></section>
+  </main>
+  <footer class="footer"><div class="wrap"><span>PourHouse • Bluewater comparable listing scan</span><span>Links and prices are public-source snapshots as of 2026-06-09.</span></div></footer>
+</body>
+</html>
