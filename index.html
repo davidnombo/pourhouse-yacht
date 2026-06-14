@@ -4,429 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PourHouse — 1986 42' Bluewater Coastal Cruiser for Sale</title>
-  <meta name="description" content="PourHouse is a 1986 42' Bluewater Coastal Cruiser for sale in Warsaw, Kentucky near Markland Dam. Asking $35,000. Wide walkaround decks, twin Crusader engines, Kohler generator, working air, two heads, full galley." />
+  <meta name="description" content="PourHouse is a 1986 42-foot Bluewater Coastal Cruiser for sale in Warsaw, Kentucky near Markland Dam. Asking $35,000. Wide walkaround decks, high rails, closed-cooled Crusader engines, Kohler generator, working air, two heads, full galley." />
   <meta property="og:title" content="PourHouse — 1986 42' Bluewater Coastal Cruiser" />
-  <meta property="og:description" content="Family-friendly Bluewater cruiser for sale near Markland Dam on the Ohio River. Asking $35,000." />
+  <meta property="og:description" content="Owner-listed Bluewater Coastal Cruiser in Warsaw, Kentucky. Asking $35,000. Safe walkaround decks, high rails, current use, and liveaboard comfort." />
   <meta property="og:type" content="website" />
   <style>
-    :root {
-      --navy: #071d35;
-      --navy-2: #0b2a4a;
-      --blue: #16446f;
-      --river: #6f97b7;
-      --cream: #fbf8f1;
-      --white: #ffffff;
-      --mist: #edf4f8;
-      --line: rgba(7, 29, 53, .16);
-      --gold: #c49a4b;
-      --ink: #0a1624;
-      --muted: #5b6b78;
-      --shadow: 0 24px 80px rgba(7, 29, 53, .16);
-      --radius: 24px;
+    :root{
+      --navy:#071d35;--navy2:#0b2a4a;--blue:#123f68;--cream:#fbf8f1;--white:#fff;--mist:#edf4f8;--line:rgba(7,29,53,.16);--gold:#c49a4b;--ink:#0a1624;--muted:#5b6b78;--green:#1d6f52;--warn:#8a6422;--shadow:0 24px 80px rgba(7,29,53,.16);--radius:24px;
     }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--ink);
-      background: var(--cream);
-      line-height: 1.5;
-    }
-
-    a { color: inherit; }
-    .wrap { width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
-
-    .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      backdrop-filter: blur(18px);
-      background: rgba(251, 248, 241, .88);
-      border-bottom: 1px solid rgba(7, 29, 53, .12);
-    }
-    .nav {
-      height: 74px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; letter-spacing: .02em; color: var(--navy); }
-    .burgee {
-      width: 42px;
-      height: 42px;
-      display: grid;
-      place-items: center;
-      border-radius: 50%;
-      background: var(--navy);
-      color: var(--white);
-      box-shadow: 0 10px 24px rgba(7, 29, 53, .2);
-      font-size: 22px;
-    }
-    .navlinks { display: flex; gap: 22px; align-items: center; color: #274157; font-size: 14px; }
-    .navlinks a { text-decoration: none; }
-    .navlinks a:hover { color: var(--navy); }
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 44px;
-      padding: 0 18px;
-      border-radius: 999px;
-      font-weight: 800;
-      text-decoration: none;
-      background: var(--navy);
-      color: var(--white);
-      border: 1px solid transparent;
-    }
-    .pill.secondary { background: transparent; color: var(--navy); border-color: rgba(7,29,53,.22); }
-    .pill.gold { background: var(--gold); color: #1d1609; }
-
-    .hero {
-      position: relative;
-      overflow: hidden;
-      background:
-        radial-gradient(circle at 80% 15%, rgba(196,154,75,.22), transparent 28%),
-        linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 55%, #0e3a63 100%);
-      color: var(--white);
-      min-height: 720px;
-    }
-    .hero:before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-image:
-        linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
-      background-size: 72px 72px;
-      mask-image: linear-gradient(to bottom, rgba(0,0,0,.9), transparent 85%);
-    }
-    .hero .wrap {
-      position: relative;
-      display: grid;
-      grid-template-columns: minmax(0, 1.06fr) minmax(340px, .94fr);
-      gap: 48px;
-      align-items: center;
-      padding: 78px 0 92px;
-    }
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      color: #dbeaf4;
-      font-size: 13px;
-      letter-spacing: .18em;
-      text-transform: uppercase;
-      font-weight: 800;
-      margin-bottom: 20px;
-    }
-    .eyebrow:before { content: ""; width: 46px; height: 1px; background: var(--gold); }
-    h1 {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(48px, 7vw, 92px);
-      line-height: .92;
-      letter-spacing: -.05em;
-      text-wrap: balance;
-    }
-    .subtitle {
-      margin: 26px 0 0;
-      max-width: 710px;
-      color: #d7e7f2;
-      font-size: clamp(18px, 2vw, 24px);
-    }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
-    .fineprint { color: #bfd3e1; font-size: 14px; margin-top: 16px; }
-
-    .hero-card {
-      background: rgba(255,255,255,.96);
-      color: var(--ink);
-      border-radius: 34px;
-      padding: 22px;
-      box-shadow: var(--shadow);
-      border: 1px solid rgba(255,255,255,.45);
-    }
-    .photo-placeholder {
-      min-height: 300px;
-      border-radius: 24px;
-      background:
-        linear-gradient(rgba(7,29,53,.18), rgba(7,29,53,.18)),
-        radial-gradient(circle at 18% 25%, rgba(255,255,255,.8), transparent 12%),
-        linear-gradient(160deg, #98b7c9 0%, #dbe8ee 45%, #244968 46%, #08213c 100%);
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      align-items: end;
-      padding: 22px;
-    }
-    .photo-placeholder:before {
-      content: "";
-      position: absolute;
-      left: -8%; right: -8%; bottom: 22%;
-      height: 54px;
-      background: rgba(255,255,255,.88);
-      border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-      transform: rotate(-1.5deg);
-      box-shadow: 0 -10px 0 rgba(255,255,255,.45), 0 12px 0 rgba(7,29,53,.24);
-    }
-    .photo-placeholder:after {
-      content: "POURHOUSE";
-      position: absolute;
-      left: 40%; bottom: 27%;
-      transform: translateX(-50%);
-      font-weight: 900;
-      letter-spacing: .18em;
-      color: var(--navy);
-      font-size: 12px;
-    }
-    .placeholder-label {
-      position: relative;
-      z-index: 2;
-      background: rgba(7,29,53,.82);
-      color: var(--white);
-      border: 1px solid rgba(255,255,255,.25);
-      border-radius: 999px;
-      padding: 9px 12px;
-      font-size: 13px;
-      font-weight: 700;
-    }
-    .price-row {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 18px;
-      align-items: center;
-      padding: 22px 4px 8px;
-    }
-    .price { font-size: 42px; font-weight: 900; color: var(--navy); letter-spacing: -.05em; }
-    .location { color: var(--muted); font-size: 14px; }
-    .status { display: flex; flex-wrap: wrap; gap: 8px; justify-content: end; }
-    .tag { background: var(--mist); color: #23425b; border-radius: 999px; padding: 8px 10px; font-size: 12px; font-weight: 800; }
-
-    .quick-specs {
-      margin-top: -48px;
-      position: relative;
-      z-index: 3;
-    }
-    .spec-grid {
-      background: var(--white);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      overflow: hidden;
-    }
-    .spec {
-      padding: 24px;
-      border-right: 1px solid var(--line);
-    }
-    .spec:last-child { border-right: 0; }
-    .spec small { display: block; color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .13em; font-weight: 900; margin-bottom: 6px; }
-    .spec strong { display: block; color: var(--navy); font-size: 22px; line-height: 1.08; }
-    .spec span { display: block; color: var(--muted); font-size: 13px; margin-top: 5px; }
-
-    section { padding: 86px 0; }
-    .section-head { display: grid; grid-template-columns: minmax(0, .75fr) minmax(280px, .45fr); gap: 42px; align-items: end; margin-bottom: 34px; }
-    h2 {
-      margin: 0;
-      color: var(--navy);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(34px, 4vw, 58px);
-      line-height: .98;
-      letter-spacing: -.035em;
-      text-wrap: balance;
-    }
-    .lede { color: #40576a; font-size: 18px; margin: 0; }
-
-    .feature-band {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-    }
-    .feature {
-      background: var(--white);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 28px;
-      min-height: 210px;
-    }
-    .feature.wide { grid-column: span 2; display: grid; grid-template-columns: .7fr 1fr; gap: 30px; align-items: center; background: linear-gradient(135deg, var(--white), #eef6fa); }
-    .icon {
-      width: 48px; height: 48px; border-radius: 16px;
-      display: grid; place-items: center;
-      background: var(--navy); color: var(--white);
-      margin-bottom: 18px;
-      font-size: 24px;
-    }
-    h3 { margin: 0 0 10px; color: var(--navy); font-size: 23px; letter-spacing: -.02em; }
-    .feature p { margin: 0; color: #4b6172; }
-    .deck-graphic {
-      min-height: 230px;
-      border-radius: 24px;
-      background: linear-gradient(160deg, #d6e7ef, #f8fbfd);
-      position: relative;
-      border: 1px solid rgba(7,29,53,.12);
-      overflow: hidden;
-    }
-    .deck-graphic:before {
-      content: "";
-      position: absolute;
-      width: 68%; height: 48%;
-      left: 16%; top: 27%;
-      border: 18px solid var(--navy);
-      border-radius: 42% 42% 34% 34%;
-      box-shadow: inset 0 0 0 18px rgba(196,154,75,.45);
-    }
-    .deck-graphic:after {
-      content: "WIDE WALKAROUND DECKS + HIGH RAILS";
-      position: absolute;
-      left: 50%; bottom: 20px;
-      transform: translateX(-50%);
-      white-space: nowrap;
-      font-size: 11px;
-      font-weight: 900;
-      letter-spacing: .16em;
-      color: var(--navy);
-    }
-
-    .two-col { display: grid; grid-template-columns: .9fr 1.1fr; gap: 28px; align-items: start; }
-    .panel {
-      background: var(--white);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 30px;
-      box-shadow: 0 12px 40px rgba(7, 29, 53, .07);
-    }
-    .panel.dark { background: var(--navy); color: var(--white); border: none; }
-    .panel.dark h3, .panel.dark strong { color: var(--white); }
-    .panel.dark p, .panel.dark li { color: #d7e7f2; }
-    .list { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
-    .list li { display: grid; grid-template-columns: 24px 1fr; gap: 10px; color: #40576a; }
-    .check { color: var(--gold); font-weight: 900; }
-
-    .table {
-      display: grid;
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      overflow: hidden;
-      background: var(--white);
-    }
-    .row { display: grid; grid-template-columns: 210px 1fr; border-bottom: 1px solid var(--line); }
-    .row:last-child { border-bottom: 0; }
-    .row div { padding: 14px 16px; }
-    .row div:first-child { background: #f0f6f9; color: var(--navy); font-weight: 900; }
-    .row div:last-child { color: #3f5669; }
-
-    .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-    .gallery-card {
-      min-height: 210px;
-      border-radius: 22px;
-      background: linear-gradient(145deg, #d9e7ef, #f8fbfd);
-      border: 1px dashed rgba(7,29,53,.28);
-      display: flex;
-      align-items: end;
-      padding: 18px;
-      color: var(--navy);
-      font-weight: 900;
-      letter-spacing: -.01em;
-      position: relative;
-      overflow: hidden;
-    }
-    .gallery-card:before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at 30% 20%, rgba(255,255,255,.8), transparent 18%), linear-gradient(180deg, transparent, rgba(7,29,53,.08));
-    }
-    .gallery-card span { position: relative; }
-
-    .video-tour {
-      background: linear-gradient(135deg, #071d35, #123f68);
-      color: var(--white);
-    }
-    .video-tour h2 { color: var(--white); }
-    .video-tour .lede { color: #d7e7f2; }
-    .video-card {
-      display: grid;
-      grid-template-columns: minmax(0, .9fr) minmax(280px, .45fr);
-      gap: 28px;
-      align-items: center;
-      background: rgba(255,255,255,.08);
-      border: 1px solid rgba(255,255,255,.18);
-      border-radius: var(--radius);
-      padding: 30px;
-      box-shadow: 0 24px 80px rgba(0,0,0,.18);
-    }
-    .video-thumb {
-      min-height: 270px;
-      border-radius: 22px;
-      background:
-        radial-gradient(circle at 32% 28%, rgba(255,255,255,.7), transparent 12%),
-        linear-gradient(160deg, #86a8bd 0%, #dbe8ee 45%, #173c5f 46%, #071d35 100%);
-      position: relative;
-      overflow: hidden;
-      border: 1px solid rgba(255,255,255,.25);
-    }
-    .video-thumb:before {
-      content: "▶";
-      position: absolute;
-      width: 78px; height: 78px;
-      left: 50%; top: 50%;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
-      display: grid; place-items: center;
-      background: rgba(255,255,255,.92);
-      color: var(--navy);
-      font-size: 30px;
-      padding-left: 5px;
-      box-shadow: 0 18px 50px rgba(0,0,0,.28);
-    }
-    .video-card p { color: #d7e7f2; }
-
-    .contact {
-      background: linear-gradient(135deg, var(--navy), #0e385f);
-      color: var(--white);
-      padding: 72px 0;
-    }
-    .contact-card {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 24px;
-      align-items: center;
-    }
-    .contact h2 { color: var(--white); }
-    .contact p { color: #d7e7f2; max-width: 720px; }
-    .phone { font-size: clamp(30px, 4vw, 54px); font-weight: 950; letter-spacing: -.04em; text-decoration: none; }
-    .footer { padding: 28px 0; background: #061426; color: #b9c8d4; font-size: 13px; }
-    .footer .wrap { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-
-    @media (max-width: 900px) {
-      .navlinks { display: none; }
-      .hero .wrap, .section-head, .two-col, .feature.wide, .contact-card, .video-card { grid-template-columns: 1fr; }
-      .spec-grid { grid-template-columns: repeat(2, 1fr); }
-      .spec:nth-child(2) { border-right: 0; }
-      .spec:nth-child(1), .spec:nth-child(2) { border-bottom: 1px solid var(--line); }
-      .feature-band, .gallery-grid { grid-template-columns: 1fr; }
-      .feature.wide { grid-column: span 1; }
-      .row { grid-template-columns: 1fr; }
-      .row div:first-child { padding-bottom: 4px; }
-      .row div:last-child { padding-top: 4px; }
-    }
-    @media (max-width: 520px) {
-      .wrap { width: min(100% - 28px, 1160px); }
-      .hero { min-height: auto; }
-      .hero .wrap { padding: 48px 0 74px; }
-      .hero-actions { flex-direction: column; }
-      .pill { width: 100%; }
-      .price-row { grid-template-columns: 1fr; }
-      .status { justify-content: start; }
-      .spec-grid { grid-template-columns: 1fr; }
-      .spec { border-right: 0; border-bottom: 1px solid var(--line); }
-      .spec:last-child { border-bottom: 0; }
-      section { padding: 58px 0; }
-    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--cream);line-height:1.5} a{color:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin:0 auto}.sr{position:absolute;left:-9999px}
+    .topbar{position:sticky;top:0;z-index:50;background:rgba(251,248,241,.92);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy);font-weight:900;letter-spacing:.02em}.burgee{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;box-shadow:0 10px 24px rgba(7,29,53,.2);font-size:22px}.navlinks{display:flex;gap:18px;align-items:center;font-size:14px;color:#274157}.navlinks a{text-decoration:none}.navlinks a:hover{color:var(--navy)}.pill{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:999px;font-weight:850;text-decoration:none;background:var(--navy);color:#fff;border:1px solid transparent}.pill.secondary{background:transparent;color:var(--navy);border-color:rgba(7,29,53,.22)}.pill.gold{background:var(--gold);color:#1d1609}.pill.ghost{background:transparent;border-color:rgba(255,255,255,.38);color:#fff}
+    .hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(135deg,rgba(7,29,53,.94),rgba(8,39,70,.84)),url('https://visitgallatincountyky.com/wp-content/uploads/2021/09/page-header.jpg') center/cover;min-height:720px}.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(to bottom,rgba(0,0,0,.86),transparent 86%)}.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:46px;align-items:center;padding:82px 0 108px}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:#dbeaf4;font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:850;margin-bottom:20px}.eyebrow:before{content:"";width:46px;height:1px;background:var(--gold)}h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(46px,7vw,86px);line-height:.92;letter-spacing:-.052em;margin:0;text-wrap:balance}.subtitle{font-size:clamp(18px,2vw,24px);color:#d7e7f2;max-width:760px;margin:24px 0 0}.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}.fineprint{color:#bfd3e1;font-size:14px;margin-top:14px}.broker-card{background:rgba(255,255,255,.97);color:var(--ink);border-radius:34px;padding:24px;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.45)}.broker-card .price{font-size:48px;line-height:1;font-weight:950;color:var(--navy);letter-spacing:-.06em}.broker-card .loc{color:#53697a;margin-top:8px}.status-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.tag{background:var(--mist);color:#23425b;border-radius:999px;padding:8px 10px;font-size:12px;font-weight:850}.broker-note{margin-top:18px;padding:16px;border-radius:18px;background:#fff6df;border:1px solid rgba(196,154,75,.32);color:#5e4922;font-size:14px}.photo-credit{font-size:11px;color:#b9c8d4;margin-top:18px}
+    .quick{margin-top:-48px;position:relative;z-index:3}.spec-grid{display:grid;grid-template-columns:repeat(5,1fr);background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}.spec{padding:22px;border-right:1px solid var(--line)}.spec:last-child{border-right:0}.spec small{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.13em;font-weight:900;margin-bottom:6px}.spec strong{display:block;color:var(--navy);font-size:21px;line-height:1.08}.spec span{display:block;color:var(--muted);font-size:13px;margin-top:5px}
+    section{padding:82px 0}.section-head{display:grid;grid-template-columns:minmax(0,.75fr) minmax(280px,.45fr);gap:42px;align-items:end;margin-bottom:34px}h2{font-family:Georgia,"Times New Roman",serif;color:var(--navy);font-size:clamp(34px,4vw,58px);line-height:.98;letter-spacing:-.035em;margin:0;text-wrap:balance}.lede{color:#40576a;font-size:18px;margin:0}.panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:0 12px 40px rgba(7,29,53,.07)}.panel.dark{background:var(--navy);color:#fff;border:none}.panel.dark h2,.panel.dark h3,.panel.dark strong{color:#fff}.panel.dark p,.panel.dark li{color:#d7e7f2}.panel h3{margin:0 0 10px;color:var(--navy);font-size:23px;letter-spacing:-.02em}.panel p{color:#40576a;margin:0 0 14px}.two-col{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:start}.list{display:grid;gap:13px;margin:0;padding:0;list-style:none}.list li{display:grid;grid-template-columns:24px 1fr;gap:10px;color:#40576a}.check{color:var(--gold);font-weight:900}.feature-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}.feature-stack{display:grid;gap:20px}.feature{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px}.feature.visual{min-height:420px;background:linear-gradient(to top,rgba(7,29,53,.84),rgba(7,29,53,.05) 55%),url('https://visitgallatincountyky.com/wp-content/uploads/2021/09/marinas-pier-99.jpg') center/cover;color:#fff;display:flex;align-items:end}.feature.visual h3{color:#fff;font-family:Georgia,"Times New Roman",serif;font-size:38px;line-height:1;margin:0 0 8px}.feature.visual p{color:#e7f1f7}.feature p{margin:0;color:#4b6172}.icon{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;background:var(--navy);color:#fff;margin-bottom:18px;font-size:22px}
+    .image-strip{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:16px}.source-photo{min-height:280px;border-radius:24px;overflow:hidden;position:relative;background:#dbe8ee;border:1px solid var(--line);box-shadow:0 12px 42px rgba(7,29,53,.08)}.source-photo.tall{min-height:420px}.source-photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.source-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(7,29,53,.72),transparent 58%)}.caption{position:absolute;left:18px;right:18px;bottom:16px;color:#fff;z-index:1}.caption strong{display:block;font-size:18px}.caption span{display:block;color:#dbeaf4;font-size:12px;margin-top:4px}.rights{margin-top:16px;color:#607386;font-size:13px}.rights a{color:var(--navy);font-weight:800}
+    .table{display:grid;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}.row{display:grid;grid-template-columns:210px 1fr;border-bottom:1px solid var(--line)}.row:last-child{border-bottom:0}.row div{padding:14px 16px}.row div:first-child{background:#f0f6f9;color:var(--navy);font-weight:900}.row div:last-child{color:#3f5669}.disclosure{background:#fff8e7;border:1px solid rgba(196,154,75,.38);border-radius:var(--radius);padding:28px}.disclosure h3{margin-top:0;color:#5d4212}
+    .broker-upgrades{background:#edf4f8}.upgrade-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.upgrade{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px}.upgrade small{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.13em;font-weight:900}.upgrade strong{display:block;color:var(--navy);font-size:22px;margin:6px 0}.upgrade p{margin:0;color:#526879}
+    .contact{background:linear-gradient(135deg,var(--navy),#0e385f);color:#fff;padding:72px 0}.contact-card{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}.contact h2{color:#fff}.contact p{color:#d7e7f2;max-width:720px}.phone{font-size:clamp(30px,4vw,54px);font-weight:950;letter-spacing:-.04em;text-decoration:none}.footer{padding:28px 0;background:#061426;color:#b9c8d4;font-size:13px}.footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:1000px){.spec-grid{grid-template-columns:repeat(2,1fr)}.spec{border-bottom:1px solid var(--line)}.hero .wrap,.section-head,.two-col,.feature-grid,.contact-card{grid-template-columns:1fr}.image-strip{grid-template-columns:1fr}.upgrade-grid{grid-template-columns:1fr 1fr}.navlinks{display:none}}
+    @media(max-width:560px){.wrap{width:min(100% - 28px,1160px)}.hero{min-height:auto}.hero .wrap{padding:52px 0 78px}.hero-actions{flex-direction:column}.pill{width:100%}.spec-grid,.upgrade-grid{grid-template-columns:1fr}.spec{border-right:0}.row{grid-template-columns:1fr}.row div:first-child{padding-bottom:4px}.row div:last-child{padding-top:4px}section{padding:58px 0}}
   </style>
 </head>
 <body>
@@ -434,13 +30,7 @@
     <nav class="nav wrap" aria-label="Main navigation">
       <a class="brand" href="#top" aria-label="PourHouse home"><span class="burgee">⚓</span><span>PourHouse</span></a>
       <div class="navlinks">
-        <a href="#why">Why this boat</a>
-        <a href="#systems">Systems</a>
-        <a href="#specs">Specs</a>
-        <a href="comparables.html">Comparables</a>
-        <a href="#gallery">Photos</a>
-        <a href="#video">Video</a>
-        <a class="pill secondary" href="tel:+15137677318">Call / Text David</a>
+        <a href="#broker">Broker view</a><a href="#why">Why this boat</a><a href="#specs">Specs</a><a href="comparables.html">Comparables</a><a href="#area">Area photos</a><a href="#video">Video</a><a class="pill secondary" href="tel:+15137677318">Call / Text David</a>
       </div>
     </nav>
   </header>
@@ -449,244 +39,112 @@
     <section class="hero">
       <div class="wrap">
         <div>
-          <div class="eyebrow">1986 Bluewater 42 Coastal Cruiser</div>
-          <h1>PourHouse is ready for the river.</h1>
-          <p class="subtitle">A comfortable, family-friendly Bluewater cruiser in Warsaw, Kentucky near Markland Dam — wide walkaround decks, high railings, open living space, twin Crusader power, and turnkey boating essentials included.</p>
-          <div class="hero-actions">
-            <a class="pill gold" href="tel:+15137677318">Call David: 513-767-7318</a>
-            <a class="pill secondary" style="color:#fff;border-color:rgba(255,255,255,.38)" href="sms:+15137677318">Text about PourHouse</a>
-          </div>
-          <p class="fineprint">Shown by appointment only. Serious inquiries welcome.</p>
+          <div class="eyebrow">Owner-listed • Warsaw, Kentucky • Ohio River</div>
+          <h1>1986 42' Bluewater Coastal Cruiser — PourHouse</h1>
+          <p class="subtitle">A manageable 42-foot Bluewater with the features buyers actually notice: safe walkaround decks, high railings, shallow-water river usability, closed-cooled Crusader power, working systems, and a comfortable floating-home layout.</p>
+          <div class="hero-actions"><a class="pill gold" href="tel:+15137677318">Call David: 513-767-7318</a><a class="pill ghost" href="sms:+15137677318">Text about PourHouse</a><a class="pill ghost" href="comparables.html">View market comparables</a></div>
+          <p class="fineprint">Shown by appointment only. Serious inquiries welcome. Photos of the boat are being expanded; current local-area imagery is used to establish location and river context.</p>
+          <p class="photo-credit">Background: public Gallatin County Tourism river image, used as local-area context pending final boat photography.</p>
         </div>
-        <aside class="hero-card" aria-label="Boat summary">
-          <div class="photo-placeholder"><span class="placeholder-label">Photo gallery coming soon</span></div>
-          <div class="price-row">
-            <div>
-              <div class="price">$35,000</div>
-              <div class="location">Warsaw, Kentucky • Ohio River near Markland Dam</div>
-            </div>
-            <div class="status">
-              <span class="tag">Documented</span>
-              <span class="tag">Ready to transfer</span>
-              <span class="tag">Under cover</span>
-            </div>
-          </div>
+        <aside class="broker-card" aria-label="Listing summary">
+          <div class="price">$35,000</div>
+          <div class="loc">Warsaw, Kentucky • near Markland Dam • Ohio River</div>
+          <div class="status-tags"><span class="tag">Documented vessel</span><span class="tag">Ready to transfer</span><span class="tag">Covered storage history</span><span class="tag">Current regular use</span></div>
+          <div class="broker-note"><strong>Broker-style positioning:</strong> PourHouse is not trying to be the biggest Bluewater on the market. The opportunity is a shorter, easier-to-own Bluewater with strong family-safety features and a lower entry price than many larger comps.</div>
         </aside>
       </div>
     </section>
 
-    <div class="quick-specs wrap" aria-label="Quick specifications">
+    <div class="quick wrap" aria-label="Quick specifications">
       <div class="spec-grid">
-        <div class="spec"><small>Engines</small><strong>Twin Crusader 350ci</strong><span>Gas • 270 hp • closed cooled</span></div>
-        <div class="spec"><small>Hours</small><strong>~1,200 each</strong><span>Owner-rounded for simple listing</span></div>
+        <div class="spec"><small>Power</small><strong>Twin Crusader 350ci</strong><span>Gas • 270 hp • closed cooled</span></div>
+        <div class="spec"><small>Hours</small><strong>~1,200 each</strong><span>Actual 1190 / 1185</span></div>
         <div class="spec"><small>Generator</small><strong>Kohler 7.5kW</strong><span>~1,500 hours • closed cooled</span></div>
         <div class="spec"><small>Comfort</small><strong>2 heads • sleeps 6</strong><span>Working air • full galley</span></div>
+        <div class="spec"><small>Use case</small><strong>Family river cruiser</strong><span>Wide decks • high rails</span></div>
       </div>
     </div>
 
+    <section id="broker" class="broker-upgrades">
+      <div class="wrap">
+        <div class="section-head"><h2>Professional broker review: what needed tightening.</h2><p class="lede">The site now leads with market positioning, verifiable buyer concerns, and trust-building caveats instead of reading like a generic owner note.</p></div>
+        <div class="upgrade-grid">
+          <div class="upgrade"><small>Upgrade 1</small><strong>Clearer buyer positioning</strong><p>Moved the value story up front: 42 feet, $35k, safe decks, high rails, shallow river usability, and manageable ownership.</p></div>
+          <div class="upgrade"><small>Upgrade 2</small><strong>Broker-style disclosure</strong><p>Separated working-system claims from unknown bottom/haul-out status and forty-year cosmetic expectations.</p></div>
+          <div class="upgrade"><small>Upgrade 3</small><strong>Market context</strong><p>Kept the comparable-listings page prominent so buyers can quickly see how a 42-foot Bluewater compares with larger national listings.</p></div>
+          <div class="upgrade"><small>Upgrade 4</small><strong>Local-area imagery</strong><p>Added public no-people context images from Pier 99 / Markland Dam area sources while final owner photos are pending.</p></div>
+          <div class="upgrade"><small>Upgrade 5</small><strong>Buyer CTA discipline</strong><p>Calls/texts are appointment-oriented and repeated only at decision points, not after every paragraph.</p></div>
+          <div class="upgrade"><small>Upgrade 6</small><strong>Next-photo checklist</strong><p>Gallery direction now tells buyers and seller what proof photos are coming next: salon, galley, heads, engines, generator, hatches, and scuffs.</p></div>
+        </div>
+      </div>
+    </section>
+
     <section id="why">
       <div class="wrap">
-        <div class="section-head">
-          <h2>A Bluewater built around comfort, access, and safe movement.</h2>
-          <p class="lede">PourHouse’s standout feature is not a gadget — it is the layout. The wide side decks, high railings, flat social topside, and boxy interior make this boat easy to enjoy with guests of all ages.</p>
+        <div class="section-head"><h2>A Bluewater built around comfort, access, and safe movement.</h2><p class="lede">PourHouse’s standout feature is the layout: wide side decks, high railings, flat social topside, shallow draft, and a boxy interior that feels more like a small floating home than a cramped cruiser.</p></div>
+        <div class="feature-grid">
+          <article class="feature visual"><div><h3>Covered-slip river context</h3><p>Pier 99 / Craig’s Creek area imagery gives buyers a real sense of the local boating environment while the final PourHouse gallery is assembled.</p></div></article>
+          <div class="feature-stack">
+            <article class="feature"><div class="icon">▣</div><h3>Wide walkaround decks + high railings</h3><p>Roughly 14-inch-plus side decks and high rails make moving around the boat more secure for children, older guests, and people not used to boats.</p></article>
+            <article class="feature"><div class="icon">☀</div><h3>Social upper helm</h3><p>The captain stays connected with guests instead of being separated from the group. This is a major usability advantage for dockside evenings and short river runs.</p></article>
+            <article class="feature"><div class="icon">⌂</div><h3>Simple floating-home interior</h3><p>Large windows, open space, easy décor, and straightforward systems make it approachable as a seasonal liveaboard-style river boat.</p></article>
+          </div>
         </div>
-        <div class="feature-band">
-          <article class="feature wide">
-            <div class="deck-graphic" aria-hidden="true"></div>
-            <div>
-              <div class="icon">▣</div>
-              <h3>Wide walkaround decks with high railings</h3>
-              <p>The boat has roughly 14-inch-plus walkaround side decks and high railings all the way around. That makes boarding, moving forward, handling lines, and hosting guests feel much more secure than on many cruisers.</p>
-            </div>
-          </article>
-          <article class="feature">
-            <div class="icon">👨‍👩‍👧‍👦</div>
-            <h3>Excellent family boat</h3>
-            <p>Guests of many ages and body types have moved around PourHouse successfully, including wheelchair users. It is a confidence-inspiring boat for children, older guests, and people not used to being rocked around on the water.</p>
-          </article>
-          <article class="feature">
-            <div class="icon">☀</div>
-            <h3>Social upper helm</h3>
-            <p>The topside surface is flat and open, keeping the captain right with guests instead of separated from the conversation while driving outside or relaxing at the dock.</p>
-          </article>
-          <article class="feature">
-            <div class="icon">⌂</div>
-            <h3>Simple floating-home interior</h3>
-            <p>Inside, the boat feels like a large, boxy houseboat: straightforward to maintain, easy to decorate, and comfortable without a maze of steps or cramped corners.</p>
-          </article>
-          <article class="feature">
-            <div class="icon">✓</div>
-            <h3>Used and maintained</h3>
-            <p>PourHouse has been seasonal liveaboard-style family boating, sees regular use, and is used every weekend. All major systems are reported working, and the boat drives and steers correctly.</p>
-          </article>
+      </div>
+    </section>
+
+    <section id="area" style="background:#fff">
+      <div class="wrap">
+        <div class="section-head"><h2>Local-area photo context while the boat gallery is built.</h2><p class="lede">These public, no-people images are not presented as PourHouse photos. They establish the Warsaw / Pier 99 / Markland Dam river setting until the full owner-shot gallery is ready.</p></div>
+        <div class="image-strip">
+          <figure class="source-photo tall"><img src="https://visitgallatincountyky.com/wp-content/uploads/2021/09/marinas-pier-99.jpg" alt="Pier 99 Marina docks in Warsaw, Kentucky"><figcaption class="caption"><strong>Pier 99 Marina context</strong><span>Public Gallatin County Tourism image</span></figcaption></figure>
+          <figure class="source-photo"><img src="https://www.kentuckytourism.com/media/images/default-source/listings/listing_a3d9424c-b6f4-4f06-9d6e-53edde6746fb_1.jpg?sfvrsn=775aa8d8_0" alt="Markland Locks and Dam on the Ohio River"><figcaption class="caption"><strong>Markland Locks & Dam</strong><span>Public Kentucky Tourism image</span></figcaption></figure>
+          <figure class="source-photo"><img src="https://www.kentuckytourism.com/media/images/default-source/listings/listing_a3d9424c-b6f4-4f06-9d6e-53edde6746fb_2.jpg?sfvrsn=ae138020_0" alt="Ohio River near Markland Locks and Dam"><figcaption class="caption"><strong>Ohio River setting</strong><span>Public Kentucky Tourism image</span></figcaption></figure>
         </div>
+        <p class="rights">Source note: local-area images are public website images from <a href="https://visitgallatincountyky.com/marinas/pier-99/" target="_blank" rel="noopener">Gallatin County Tourism / Pier 99</a> and <a href="https://www.kentuckytourism.com/explore/markland-locks-and-dam-198" target="_blank" rel="noopener">Kentucky Tourism / Markland Locks and Dam</a>, used as temporary area context. Final marketing should replace or supplement these with owner-approved PourHouse photos.</p>
       </div>
     </section>
 
     <section id="systems" style="background:#edf4f8">
       <div class="wrap two-col">
-        <div class="panel dark">
-          <h2 style="font-size:clamp(32px,4vw,52px);">Mechanical and onboard systems</h2>
-          <p>Owner-maintained, closed-cooled gas power with fresh routine service items and a Kohler generator.</p>
-          <ul class="list" style="margin-top:24px">
-            <li><span class="check">✓</span><span>Twin Crusader 350ci / 270 hp gas engines</span></li>
-            <li><span class="check">✓</span><span>Approximately 1,200 hours each</span></li>
-            <li><span class="check">✓</span><span>Closed cooling / heat exchanger system — not raw water cooled</span></li>
-            <li><span class="check">✓</span><span>Fresh oil, fresh spark plugs, fresh plug wires</span></li>
-            <li><span class="check">✓</span><span>Electronic ignition upgrade with less than approximately 100 hours</span></li>
-            <li><span class="check">✓</span><span>Kohler 7.5kW generator with approximately 1,500 hours</span></li>
-          </ul>
-        </div>
-        <div class="panel">
-          <h3>Comfort and accommodations</h3>
-          <ul class="list">
-            <li><span class="check">✓</span><span>Working air conditioning; heat handled with ceramic heaters</span></li>
-            <li><span class="check">✓</span><span>Two working heads and two working showers</span></li>
-            <li><span class="check">✓</span><span>Sleeps approximately six: V-berth, convertible couch, convertible dinette</span></li>
-            <li><span class="check">✓</span><span>Full galley with refrigerator/freezer, electric Princess stove and oven, microwave, and double-basin sink</span></li>
-            <li><span class="check">✓</span><span>Refrigerator operates on shore power and 12-volt</span></li>
-            <li><span class="check">✓</span><span>JL Audio stereo</span></li>
-            <li><span class="check">✓</span><span>30-amp shore power and battery charger</span></li>
-            <li><span class="check">✓</span><span>Ship-to-shore radios onboard</span></li>
-          </ul>
-        </div>
+        <div class="panel dark"><h2 style="font-size:clamp(32px,4vw,52px);">Mechanical and onboard systems</h2><p>Owner-maintained, closed-cooled gas power with fresh routine service items and a Kohler generator.</p><ul class="list" style="margin-top:24px"><li><span class="check">✓</span><span>Twin Crusader 350ci / 270 hp gas engines</span></li><li><span class="check">✓</span><span>Approximately 1,200 hours each</span></li><li><span class="check">✓</span><span>Closed cooling / heat exchanger system — not raw water cooled</span></li><li><span class="check">✓</span><span>Fresh oil, spark plugs, and plug wires</span></li><li><span class="check">✓</span><span>Electronic ignition upgrade with less than approximately 100 hours</span></li><li><span class="check">✓</span><span>Kohler 7.5kW generator with approximately 1,500 hours</span></li></ul></div>
+        <div class="panel"><h3>Comfort and accommodations</h3><ul class="list"><li><span class="check">✓</span><span>Working air conditioning; heat handled with ceramic heaters</span></li><li><span class="check">✓</span><span>Two working heads and two working showers</span></li><li><span class="check">✓</span><span>Sleeps approximately six: V-berth, convertible couch, convertible dinette</span></li><li><span class="check">✓</span><span>Full galley with refrigerator/freezer, electric Princess stove and oven, microwave, and double-basin sink</span></li><li><span class="check">✓</span><span>Refrigerator operates on shore power and 12-volt</span></li><li><span class="check">✓</span><span>JL Audio stereo</span></li><li><span class="check">✓</span><span>30-amp shore power and battery charger; no inverter</span></li><li><span class="check">✓</span><span>Ship-to-shore radios onboard</span></li></ul></div>
       </div>
     </section>
 
     <section id="specs">
       <div class="wrap">
-        <div class="section-head">
-          <h2>Specifications and notes</h2>
-          <p class="lede">A practical snapshot for buyers. Photos of hatches, lockers, systems, decks, interior, and machinery will be added as they are available.</p>
-        </div>
+        <div class="section-head"><h2>Specifications, included items, and candid notes.</h2><p class="lede">A broker-style buyer page should answer the practical questions quickly and make uncertainty visible instead of hiding it.</p></div>
         <div class="two-col">
           <div class="table" aria-label="Specifications table">
-            <div class="row"><div>Year / Model</div><div>1986 Bluewater 42 Coastal Cruiser</div></div>
-            <div class="row"><div>Length</div><div>42 feet</div></div>
-            <div class="row"><div>Beam</div><div>14'0" per published Bluewater 42 references</div></div>
-            <div class="row"><div>Draft</div><div>Owner reports approximately 21"; published references list approximately 23"</div></div>
-            <div class="row"><div>Fuel</div><div>Owner-reported 200 gallons — to be verified against tankage</div></div>
-            <div class="row"><div>Fresh water</div><div>128 gallons</div></div>
-            <div class="row"><div>Holding tank</div><div>40 gallons</div></div>
-            <div class="row"><div>Cruise speed</div><div>Comfortable cruise about 8–9 knots</div></div>
-            <div class="row"><div>Use</div><div>Currently used regularly; taken out this season</div></div>
+            <div class="row"><div>Year / Model</div><div>1986 Bluewater 42 Coastal Cruiser</div></div><div class="row"><div>Length</div><div>42 feet</div></div><div class="row"><div>Beam</div><div>14'0" per published Bluewater 42 references</div></div><div class="row"><div>Draft</div><div>Owner reports approximately 21"; published references list approximately 23"</div></div><div class="row"><div>Fuel</div><div>Owner-reported 200 gallons — to be verified against tankage</div></div><div class="row"><div>Fresh water</div><div>128 gallons</div></div><div class="row"><div>Holding tank</div><div>40 gallons</div></div><div class="row"><div>Cruise speed</div><div>Comfortable cruise about 8–9 knots</div></div><div class="row"><div>Use</div><div>Currently used regularly; taken out this season</div></div>
           </div>
-          <div class="panel">
-            <h3>Condition notes</h3>
-            <ul class="list">
-              <li><span class="check">✓</span><span>No known soft spots</span></li>
-              <li><span class="check">✓</span><span>No known leaks</span></li>
-              <li><span class="check">✓</span><span>No known engine, transmission, generator, plumbing, or electrical issues</span></li>
-              <li><span class="check">✓</span><span>Props, shafts, and rudders believed to be in good condition</span></li>
-              <li><span class="check">✓</span><span>Bottom paint condition unknown; last haul-out believed to be at least 12 years ago</span></li>
-              <li><span class="check">✓</span><span>Stored under cover for at least the past 24 years</span></li>
-              <li><span class="check">✓</span><span>Forty-year-old boat with normal visible age, scuffs, and imperfections, but no specific crash or incident to call out</span></li>
-            </ul>
-          </div>
+          <div class="disclosure"><h3>Condition language a broker would want clear</h3><ul class="list"><li><span class="check">✓</span><span>No known soft spots or leaks.</span></li><li><span class="check">✓</span><span>No known engine, transmission, generator, plumbing, or electrical issues.</span></li><li><span class="check">✓</span><span>Forty-year-old boat with normal visible age, scuffs, and imperfections.</span></li><li><span class="check">✓</span><span>Props, shafts, and rudders believed to be in good condition.</span></li><li><span class="check">!</span><span>Bottom paint condition unknown; last haul-out believed to be at least 12 years ago.</span></li></ul></div>
         </div>
       </div>
     </section>
 
     <section style="background:#fff">
       <div class="wrap two-col">
-        <div class="panel">
-          <h3>Included with sale</h3>
-          <ul class="list">
-            <li><span class="check">✓</span><span>Turnkey boating essentials included</span></li>
-            <li><span class="check">✓</span><span>Dock lines and fenders</span></li>
-            <li><span class="check">✓</span><span>Furniture currently onboard</span></li>
-            <li><span class="check">✓</span><span>Approximately 25 life jackets</span></li>
-            <li><span class="check">✓</span><span>Limited spare parts</span></li>
-            <li><span class="check">✓</span><span>Working davit</span></li>
-            <li><span class="check">✓</span><span>Winter canvas / mooring cloth / cockpit cover for upper driving station</span></li>
-          </ul>
-        </div>
-        <div class="panel">
-          <h3>Notable exclusions / clarifications</h3>
-          <ul class="list">
-            <li><span class="check">•</span><span>No tender or dinghy included</span></li>
-            <li><span class="check">•</span><span>No inverter</span></li>
-            <li><span class="check">•</span><span>No full isinglass enclosure or isinglass screens</span></li>
-            <li><span class="check">•</span><span>Electronics are basic; the boat is not being marketed around modern nav electronics</span></li>
-            <li><span class="check">•</span><span>Price is presented simply at $35,000 without firm/obo language</span></li>
-          </ul>
-        </div>
+        <div class="panel"><h3>Included with sale</h3><ul class="list"><li><span class="check">✓</span><span>Turnkey boating essentials included</span></li><li><span class="check">✓</span><span>Dock lines, fenders, furniture currently onboard</span></li><li><span class="check">✓</span><span>Approximately 25 life jackets</span></li><li><span class="check">✓</span><span>Limited spare parts</span></li><li><span class="check">✓</span><span>Working davit</span></li><li><span class="check">✓</span><span>Winter canvas / mooring cloth / cockpit cover for upper driving station</span></li></ul></div>
+        <div class="panel"><h3>Notable exclusions / clarifications</h3><ul class="list"><li><span class="check">•</span><span>No tender or dinghy included</span></li><li><span class="check">•</span><span>No full isinglass enclosure or isinglass screens</span></li><li><span class="check">•</span><span>Electronics are basic; the boat is not being marketed around modern nav electronics</span></li><li><span class="check">•</span><span>Price is presented simply at $35,000 without firm/obo language</span></li></ul></div>
       </div>
     </section>
 
-    <section style="background:#edf4f8">
-      <div class="wrap two-col">
-        <div class="panel">
-          <h3>National Bluewater comparables</h3>
-          <p style="color:#40576a;margin:0 0 16px">A first-pass national scan found public Bluewater listings from 42 feet up to larger 55–68 foot yachts. The comparison page sorts them shortest to longest so buyers can quickly see where PourHouse sits in the market.</p>
-          <a class="pill" href="comparables.html">View comparable listings</a>
-        </div>
-        <div class="panel dark">
-          <h3>Positioning note</h3>
-          <p>PourHouse is intentionally positioned as a smaller, approachable Bluewater Coastal Cruiser: 42 feet, $35,000, wide walkaround decks, current regular use, and turnkey boating essentials included.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="gallery">
+    <section id="photos" class="broker-upgrades">
       <div class="wrap">
-        <div class="section-head">
-          <h2>Photo set coming next</h2>
-          <p class="lede">The first version uses placeholders. The final site should include broad exterior shots plus honest detail photos: inside hatches, hanging lockers, engine room, generator, decks, helm, heads, galley, and cosmetic scuffs.</p>
-        </div>
-        <div class="gallery-grid">
-          <div class="gallery-card"><span>Exterior / profile</span></div>
-          <div class="gallery-card"><span>Wide walkaround decks</span></div>
-          <div class="gallery-card"><span>Upper helm / social deck</span></div>
-          <div class="gallery-card"><span>Salon and dinette</span></div>
-          <div class="gallery-card"><span>Galley and appliances</span></div>
-          <div class="gallery-card"><span>Engine room / generator</span></div>
-        </div>
+        <div class="section-head"><h2>Final PourHouse photo checklist.</h2><p class="lede">The site can sell today, but the next owner-shot batch should make it survey-minded and complete.</p></div>
+        <div class="upgrade-grid"><div class="upgrade"><small>Exterior</small><strong>Profile, bow, stern, decks</strong><p>Wide walkarounds, high rails, upper helm, covered slip, deck condition, dock access.</p></div><div class="upgrade"><small>Interior</small><strong>Salon, galley, berths</strong><p>Lower helm, large windows, V-berth, dinette/couch conversions, storage lockers.</p></div><div class="upgrade"><small>Systems</small><strong>Engines and generator</strong><p>Both engines, Kohler generator, batteries, charger, electrical panel, bilges, under-hatches.</p></div></div>
       </div>
     </section>
 
-    <section class="video-tour" id="video">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Video glimpse of PourHouse</h2>
-          <p class="lede">A shared iCloud video is available now while the full photo set is being prepared. The final page can replace this with an embedded/hosted tour once the original file is available.</p>
-        </div>
-        <div class="video-card">
-          <a class="video-thumb" href="https://share.icloud.com/photos/0ecW_XrIDjFsiuff3QfYA20ug" target="_blank" rel="noopener" aria-label="Open PourHouse iCloud video"></a>
-          <div>
-            <h3 style="color:#fff">Open the current shared video</h3>
-            <p>This link opens the current iCloud shared video/photo item for PourHouse. It is a good temporary tour asset until the full walk-through video and final photo gallery are ready.</p>
-            <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:20px">
-              <a class="pill gold" href="https://share.icloud.com/photos/0ecW_XrIDjFsiuff3QfYA20ug" target="_blank" rel="noopener">Watch shared video</a>
-              <a class="pill secondary" style="color:#fff;border-color:rgba(255,255,255,.38)" href="#contact">Ask about the boat</a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section class="video-tour" id="video" style="background:linear-gradient(135deg,#071d35,#123f68);color:#fff">
+      <div class="wrap two-col"><div><h2 style="color:#fff">Video glimpse of PourHouse</h2><p style="color:#d7e7f2">A shared iCloud video is available now while the full photo set is being prepared. The final page can replace this with an embedded/hosted tour once the original file is available.</p><div class="hero-actions"><a class="pill gold" href="https://share.icloud.com/photos/0ecW_XrIDjFsiuff3QfYA20ug" target="_blank" rel="noopener">Watch shared video</a><a class="pill ghost" href="#contact">Ask about the boat</a></div></div><div class="panel" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18)"><h3 style="color:#fff">What the video does now</h3><p style="color:#d7e7f2">It proves the boat is real and gives a quick visual reference. The next upgrade is a dedicated walk-through: exterior, decks, salon, galley, heads, engine room, generator, and underway clip.</p></div></div>
     </section>
 
-    <section class="contact" id="contact">
-      <div class="wrap contact-card">
-        <div>
-          <h2>Interested in PourHouse?</h2>
-          <p>Shown by appointment only in Warsaw, Kentucky near Markland Dam. Call or text David for details, to discuss the boat, or to arrange a showing. Serious inquiries welcome.</p>
-        </div>
-        <div>
-          <a class="phone" href="tel:+15137677318">513-767-7318</a>
-          <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
-            <a class="pill gold" href="tel:+15137677318">Call</a>
-            <a class="pill secondary" style="color:#fff;border-color:rgba(255,255,255,.38)" href="sms:+15137677318">Text</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="contact" id="contact"><div class="wrap contact-card"><div><h2>Interested in PourHouse?</h2><p>Shown by appointment only in Warsaw, Kentucky near Markland Dam. Call or text David for details, to discuss the boat, or to arrange a showing. Serious inquiries welcome.</p></div><div><a class="phone" href="tel:+15137677318">513-767-7318</a><div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap"><a class="pill gold" href="tel:+15137677318">Call</a><a class="pill ghost" href="sms:+15137677318">Text</a></div></div></div></section>
   </main>
 
-  <footer class="footer">
-    <div class="wrap">
-      <span>PourHouse • 1986 42' Bluewater Coastal Cruiser • Warsaw, Kentucky</span>
-      <span>Draft sales page — photos and final verification details pending.</span>
-    </div>
-  </footer>
+  <footer class="footer"><div class="wrap"><span>PourHouse • 1986 42' Bluewater Coastal Cruiser • Warsaw, Kentucky</span><span>Owner-listed sales site. Area images are temporary public-source context pending final owner photo gallery.</span></div></footer>
 </body>
 </html>
